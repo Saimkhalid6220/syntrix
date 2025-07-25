@@ -1,8 +1,20 @@
+"use client";
+
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 const HeroSection = () => {
+  // Add scroll handling function
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <section id="home" className="relative min-h-screen w-full bg-[#0F0F2D] pt-20 md:pt-24 px-4 md:px-6 lg:px-16 overflow-hidden">
       {/* Glow Effect */}
@@ -30,18 +42,18 @@ const HeroSection = () => {
             We build smart solutions for smarter businesses.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-4">
-            <Link
-              href="/services"
+            <button
+              onClick={() => handleScroll('services')}
               className="bg-gradient-to-r from-[#6C63FF] to-[#00D1FF] text-white px-6 sm:px-8 py-3 rounded-full font-medium text-base sm:text-lg transition-all hover:shadow-lg hover:shadow-blue-500/30 w-full sm:w-auto text-center"
             >
               Our Services
-            </Link>
-            <Link
-              href="/portfolio"
+            </button>
+            <button
+              onClick={() => handleScroll('portfolio')}
               className="bg-transparent border-2 border-white/20 text-white px-6 sm:px-8 py-3 rounded-full font-medium text-base sm:text-lg transition-all hover:bg-white/10 w-full sm:w-auto text-center"
             >
               View Portfolio
-            </Link>
+            </button>
           </div>
         </div>
       </div>
