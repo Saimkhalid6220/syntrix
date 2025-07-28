@@ -18,8 +18,8 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen w-full bg-[#0F0F2D] pt-20 md:pt-24 px-4 md:px-6 lg:px-16 overflow-hidden">
       {/* Glow Effect */}
-      <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] rounded-full bg-[#4066ff]/20 blur-[120px] pointer-events-none" />
-      
+      <div className="absolute top-1/3 right-0 w-[200px] md:w-[400px] h-[200px] md:h-[400px] rounded-full bg-[#4066ff]/20 blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[250px] h-[200px] bg-[#6C63FF]/30 blur-[150px] pointer-events-none z-0" />
       <div className="container mx-auto min-h-[calc(100vh-80px)] flex flex-col lg:grid lg:grid-cols-2 items-center gap-0 lg:gap-8 relative">
         {/* Image Section - Adjusted top margin */}
         <div className="relative order-1 lg:order-2 mt-6 md:mt-8 lg:mt-0 mb-2 lg:mb-0">
