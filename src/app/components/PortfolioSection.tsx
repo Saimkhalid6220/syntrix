@@ -6,25 +6,25 @@ import { motion } from "framer-motion";
 const portfolioItems = [
   {
     id: 1,
-    title: "AI Chatbot",
-    description: "Custom-trained AI chatbot for e-commerce support.",
-    // image: "/portfolio/chatbot.png",
-    tech: ["Next.js", "OpenAI", "TailwindCSS"],
-    link: "https://your-site.com/chatbot"
+    title: "SELD LEGAL DASHBOARD",
+    description: "A dashboard for keeping track of cases and doing crud operations etc.",
+    image: "/seldlegaldashboard.png",
+    tech: ["Next.js", "TailwindCSS" , "MongoDB"],
+    link: "https://www.seldlegaldashboard.com"
   },
   {
     id: 2,
-    title: "Mobile App UI",
-    description: "Sleek cross-platform finance app UI.",
-    // image: "/portfolio/app-ui.png",
-    tech: ["React Native", "Figma"],
+    title: "Estenzo",
+    description: "A fully optimized E-commerce platform.",
+    image: "/estenzo.jpg",
+    tech: ["Nextjs", "Figma" , "TailwindCSS"],
     link: "https://your-site.com/app"
   },
   {
     id: 3,
-    title: "Admin Dashboard",
+    title: "Afnan Resells",
     description: "Analytics dashboard for SaaS company.",
-    // image: "/portfolio/dashboard.png",
+    image: "/afnan.png",
     tech: ["Next.js", "Chart.js", "TailwindCSS"],
     link: "https://your-site.com/dashboard"
   }
@@ -46,7 +46,7 @@ export default function PortfolioSection() {
               whileHover={{ scale: 1.03 }}
             >
               <Image
-                src={""}
+                src={item.image || ""}
                 alt={item.title}
                 width={500}
                 height={300}
